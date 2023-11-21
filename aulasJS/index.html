@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor</title>
+</head>
+<body>
+    <main>
+        <section>
+            <p id="saida">
+                trabalhando com vetor 
+            </p>
+        </section>
+    </main>
+    <script>
+        const saida = document.getElementById('saida');
+        var frutas = ['Maca','Banana','Laranja','Abacaxi','Morango'];
+
+        // for(i = 0; i > frutas.length; i++)
+        
+        // foreach
+        for(i in frutas){
+            saida.innerText += "\nchave= " + i + " valor= " + frutas[i];
+        }
+        
+        //apenas uma quebra de linha
+        saida.innerText += "\n";
+        
+        // segundo tipo de foreach
+        for(fruta of frutas){
+            saida.innerText += "\n Valor= " + fruta;
+        }
+        
+        // terceiro foreach
+        saida.innerText += "\n";
+        frutas.forEach((fruta, chave) => 
+        {
+            saida.innerText += "\n chave= "+ chave + "Valor= " + fruta;
+        });
+
+        // add de elemento no vetor
+        frutas.push("Melancia");
+        saida.innerText += "\n\n adicionado no vetor: "+ frutas;
+
+        // remover elemento do vetor
+        frutas.pop();
+        saida.innerText +="\n removendo ultimo elemento: " + frutas;
+
+        //add no inicio 
+        frutas.unshift("Melancia");
+        saida.innerText += "\n\n adicionando no inicio do vetor: " + frutas;
+
+        // removendo do inicio
+        frutas.shift();
+        saida.innerText += "\n removendo o primeiro elemento: " + frutas;
+
+        //copia e divisao de um vetor
+        // slice
+        var novoVetor = frutas.slice(1, 3);
+        saida.innerText += "\n\n novo vetor: " + novoVetor;
+
+        // remover 
+        frutas.splice(1, 1);
+        saida.innerText += "\n\n removendo elemento do vetor: " + frutas;
+
+        // add elemento em determinada posicao, tmb pode ser usado para substituir
+        frutas.splice(1,0,"banana");
+        saida.innerText += "\n add elemento do vetor: " + frutas;
+
+        // index de elemento
+        var index = frutas.indexOf("Maca");
+        saida.innerText += "\n index do elemento maca: " + index;
+
+         
+
+
+
+
+    </script>
+</body>
+</html>

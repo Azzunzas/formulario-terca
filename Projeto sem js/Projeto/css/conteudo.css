@@ -1,0 +1,43 @@
+body
+{
+    background-color: #b2a5f8;
+    background-image: url("./images/space.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu
+{
+    text-align: center;
+    padding-top: 15px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.linha_menu
+{
+    display: inline-flex;
+    padding: 10px;
+    color: white;
+}
+
+/* corpo do site */
+
+main
+{
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(195, 194, 206);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* texto */
+p
+{
+    display: inline-block;
+    width: 30%;
+    color: #666;
+}

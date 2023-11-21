@@ -1,0 +1,63 @@
+/*
+*{
+	margin: 0;
+	padding: 0;
+}
+*/
+
+body{
+	margin: 0;
+	height: 200vh;
+}
+
+main{
+	background-color: #ccc;
+	width: 80%;
+	margin: 50px auto;
+}
+
+div{
+	padding: 20px;
+}
+
+
+div:hover{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(10px);
+}
+
+.static{
+	position: static;
+	background-color: lightyellow;
+	top: 20px;
+	left: 20px;
+}
+
+.relative{
+	position: relative;
+	background-color: lightblue;
+	left: 20px;
+	bottom: 20px;
+}
+
+.absolute{
+	position: absolute;
+	background-color: lightgreen;
+	top: 20px;
+	right: 20px;
+}
+
+.fixed{
+	position: fixed;
+	background-color: lightpink;
+	bottom: 20px;
+	right: 20px;
+}
