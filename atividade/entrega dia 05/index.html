@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        li {
+            float: left;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .cabecalio {
+            background-color: gray;
+        }
+    </style>
+    <title>Cadastro de pontos</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Cadastro e Listagem de Pontos</h1>
+            <hr>
+            <form>
+                <label for="texto">Motivo: </label>
+                <input type="text" name="texto" id="textoid">
+                <label for="data">Data: </label>
+                <input type="date" name="data">
+                <label for="tipo">Tipo: </label>
+                <select name="tipo">
+                    <option value="opcao1">entrada</option>
+                    <option value="opcao2">saida</option>
+                </select>
+                <input type="submit" value="Registrar Ponto">
+            </form>
+            <hr>
+        </section>
+
+        <section>
+            <ul>
+                <li><b>Nome: </b>Guilherme</li>
+                <li><b>Cargo: </b>Sla</li>
+            </ul>
+            <p><b>Nome: </b>Guilherme &nbsp; <b>Cargo: </b>Sla</p> <!--errado!-->
+
+            <table>
+                <caption>Registro de ponto.</caption>
+                <thead>
+                    <tr>
+                        <th class="cabecalio">data: </th>
+                        <th class="cabecalio">Entrada: </th>
+                        <th class="cabecalio">Saida: </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">01/08/2023</td>
+                        <td>09:00</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>19:00</td>
+                        <td>21:00</td>
+                    </tr>
+                    <tr>
+                        <td>02/08/2023</td>
+                        <td colspan="2">Folga</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">03/08/2023</td>
+                        <td>08:30</td>
+                        <td>17:45</td>
+                    </tr>
+                    <tr>
+                        <td>18:30</td>
+                        <td>22:00</td>
+                    </tr>
+                    <tr>
+                        <td>04/08/2023</td>
+                        <td colspan="2">Folga</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">05/08/2023</td>
+                        <td>10:15</td>
+                        <td>18:30</td>
+                    </tr>
+                    <tr>
+                        <td> 19:15</td>
+                        <td> 21:45</td>
+                    </tr>
+                    <tr>
+                        <td>06/08/2023</td>
+                        <td colspan="2"> Folga</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <p>Sistema de gestao de ponto&reg;</p>
+    </footer>
+</body>
+
+</html>

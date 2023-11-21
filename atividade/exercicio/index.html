@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <style>
+        div
+        {
+            padding: 10px;
+            padding-left: 0px;
+        }
+
+        nav
+        {
+            padding-top: 15px;
+        }
+
+        a
+        {
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        table
+        {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        th, td
+        {
+            border: 1px solid lightgrey;
+            padding: 10px;
+        }
+
+        thead
+        {
+            color: white;
+            background-color: rgb(0, 114, 114);
+        }
+
+        .botoes
+        {
+            padding: 10px;
+        }
+
+        .botoes_tabela
+        {
+            padding: 10px;
+        }
+
+        .space_botoes
+        {
+            margin: 10px;
+        }
+
+        .cpf
+        {
+            background-color: rgba(46, 143, 111, 0.500);
+        }
+
+        .telefone
+        {
+            background-color: rgba(46, 143, 111, 0.500);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <center><h1>Exercício</h1></center>
+            <hr>
+        </section>
+
+        <section>
+            <form>
+                <div>
+                    <label for="nome"><b>Nome: &nbsp;</b></label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                </div>
+                
+                <div>
+                    <label for="cpf"><b>CPF: &nbsp;</b></label>
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+                </div>
+                
+                <div>
+                    <label for="endereço"><b>Endereço: &nbsp;</b></label>
+                    <input type="text" id="endereço" name="endereço" placeholder="Digite seu endereço">
+                </div>
+                
+                <div>
+                    <label for="telefone"><b>Telefone: &nbsp;</b></label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                </div>
+                
+                <div>
+                    <label for="email"><b>E-mail: &nbsp;</b></label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+                
+                <div class="botoes">
+                    <input type="submit" value="Enviar" name="enviar"> &nbsp; &nbsp; | &nbsp; &nbsp;  
+                    <input type="submit" value="Limpar" name="limpar">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>José</td>
+                        <td class="cpf">12345678910</td>
+                        <td>Rua das Flores</td>
+                        <td class="telefone">41 999-9999</td>
+                        <td>email@dominio.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td class="cpf">12345678910</td>
+                        <td>Rua das Flores</td>
+                        <td class="telefone">41 999-9999</td>
+                        <td>email@dominio.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td class="cpf">12345678910</td>
+                        <td>Rua das Flores</td>
+                        <td class="telefone">41 999-9999</td>
+                        <td>email@dominio.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td class="cpf">12345678910</td>
+                        <td>Rua das Flores</td>
+                        <td class="telefone">41 999-9999</td>
+                        <td>email@dominio.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td class="cpf">12345678910</td>
+                        <td>Rua das Flores</td>
+                        <td class="telefone">41 999-9999</td>
+                        <td>email@dominio.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td class="cpf">12345678910</td>
+                        <td>Rua das Flores</td>
+                        <td class="telefone">41 999-9999</td>
+                        <td>email@dominio.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td class="cpf">12345678910</td>
+                        <td>Rua das Flores</td>
+                        <td class="telefone">41 999-9999</td>
+                        <td>email@dominio.com.br</td>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td class="cpf">12345678910</td>
+                        <td>Rua das Flores</td>
+                        <td class="telefone">41 999-9999</td>
+                        <td>email@dominio.com.br</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="botoes_tabela">
+            <center>
+                <input type="button" value="Anterior">
+                <select class="space_botoes"><option>1</option></select>
+                <input type="button" value="Próximo">
+            </center>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p><sup>&copy;</sup>2023 - Todos os direitos Reservados</p>
+    </footer>
+</body>
+</html>
