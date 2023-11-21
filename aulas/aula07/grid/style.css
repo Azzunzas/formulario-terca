@@ -1,0 +1,19 @@
+body{
+    font-family: Arial,  sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+}
+.item{
+    background-color: rgb(50, 50, 223);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+
+}

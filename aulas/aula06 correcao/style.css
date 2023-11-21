@@ -1,0 +1,52 @@
+body{
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+main{
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+h1{
+    color: #333;
+}
+p{
+    color: rgb(90, 90, 90);
+}
+label, input{
+    display: inline-block;
+    margin: 0px 40px;
+    margin-bottom: 5px;
+}
+label{
+    width: calc(30% - 80px);
+    font-weight: bold;
+}   
+input{
+    width: calc(70% - 108px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botoes{
+    text-align: right;
+    margin-top: 10px;
+}
+.botoes button{
+    border: 0px;
+    padding:10px 20px;
+    color: white;
+}
+
+.laranja{
+    background-color: rgb(226, 149, 5);
+
+}
+.azul{
+    background-color: rgb(28, 28, 241); 
+}

@@ -1,0 +1,36 @@
+body{
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+}
+#container{
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3) ;
+    border-radius: 10px;
+}
+#texto{
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    margin: auto
+}
+#reset{
+    background-color: orange;
+    padding: 10px 20px;
+
+}
+#submit{
+    background-color: blue;
+    padding: 10px 20px;
+}
+.osinput{
+    width: 70%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    align-self: center;
+}
